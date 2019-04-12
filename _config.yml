@@ -66,7 +66,7 @@ gitalk:
   clientSecret: 3b8cee96be22bbdb36180dabe8c6872a03c4a930    #生成的clientSecret
   repo: gbchen.github.io    #仓库名称
   owner: gbchen    #github用户名
-  admin: gbchen
+  admin: [gbchen]
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 

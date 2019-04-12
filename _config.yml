@@ -64,7 +64,7 @@ gitalk:
   enable: true    #是否开启Gitalk评论
   clientID: d857afc2df72ab4baa9c                            #生成的clientID
   clientSecret: 3b8cee96be22bbdb36180dabe8c6872a03c4a930    #生成的clientSecret
-  repo: https://gbchen.github.io    #仓库名称
+  repo: gbchen.github.io    #仓库名称
   owner: gbchen    #github用户名
   admin: gbchen
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
@@ -78,7 +78,7 @@ ba_track_id: b50bf2b12b5338a1845e33832976fd68
 
 # Google Analytics
 ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
-ga_domain: qiubaiying.top               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+ga_domain: auto              # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 
 

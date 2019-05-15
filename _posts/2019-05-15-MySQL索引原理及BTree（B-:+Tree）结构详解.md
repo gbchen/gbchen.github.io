@@ -41,7 +41,7 @@ MySQL官方对索引的定义为：索引（Index）是帮助MySQL高效获取�
 
 - 例子：
 
-![](https://ws3.sinaimg.cn/large/006tNc79ly1g31sqxjritj310c0ii0uv.jpg)
+![1](https://ws3.sinaimg.cn/large/006tNc79ly1g31sqxjritj310c0ii0uv.jpg)
 
 图中展示了一种可能的索引方式。左边是数据表，一共有两列七条记录，最左边的是数据记录的物理地址（注意逻辑上相邻的记录在磁盘上也并不是一定物理相邻的）。为了加快Col2的查找，可以维护一个右边所示的二叉查找树，每个节点分别包含索引键值和一个指向对应数据记录物理地址的指针，这样就可以运用二叉查找在O(logn)的复杂度内获取到相应数据。
 
@@ -70,7 +70,7 @@ MySQL官方对索引的定义为：索引（Index）是帮助MySQL高效获取�
 
 图2是一个d=2的B-Tree示意图。
 
-![](https://ws4.sinaimg.cn/large/006tNc79ly1g31swktpx3j30tu07sq3m.jpg)
+![B-Tree示意图](https://ws4.sinaimg.cn/large/006tNc79ly1g31swktpx3j30tu07sq3m.jpg)
 
 由于B-Tree的特性，在B-Tree中按key检索数据的算法非常直观：首先从根节点进行二分查找，如果找到则返回对应节点的data，否则对相应区间的指针指向的节点递归进行查找，直到找到节点或找到null指针，前者查找成功，后者查找失败。
 
